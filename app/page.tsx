@@ -250,6 +250,84 @@ const Technology = () => {
   );
 };
 
+const Testimonials = () => {
+  return (
+    <section className="w-full px-6 py-24 bg-white max-w-7xl mx-auto">
+      <div className="text-xs font-bold tracking-widest uppercase mb-6">/CLIENT SUCCESS</div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Proven Results for<br />Industry Leaders</h2>
+        <div className="flex items-end">
+          <p className="text-zinc-600 text-lg max-w-md">
+            See how we&apos;ve helped global brands optimize their supply chains and accelerate growth.
+          </p>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Testimonial 1 */}
+        <div className="bg-[#F9F9F9] p-8 rounded-3xl flex flex-col border border-zinc-100">
+          <div className="mb-8">
+            <div className="text-5xl font-black tracking-tighter text-zinc-900 mb-2">40%</div>
+            <div className="text-sm font-bold text-zinc-600 uppercase tracking-wider">Reduction in transit time</div>
+          </div>
+          <p className="text-zinc-700 leading-relaxed mb-8 flex-grow">
+            &quot;/AXION completely overhauled our international distribution network. Their real-time tracking and strategic warehousing allowed us to cut our transit times nearly in half, significantly boosting our customer satisfaction.&quot;
+          </p>
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-zinc-200 overflow-hidden relative">
+              <Image src="https://picsum.photos/seed/person1/100/100" alt="Sarah Jenkins" fill className="object-cover" referrerPolicy="no-referrer" />
+            </div>
+            <div>
+              <div className="font-bold text-zinc-900">Sarah Jenkins</div>
+              <div className="text-sm text-zinc-500">VP of Supply Chain, TechGlobal</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Testimonial 2 */}
+        <div className="bg-zinc-900 p-8 rounded-3xl flex flex-col text-white shadow-lg">
+          <div className="mb-8">
+            <div className="text-5xl font-black tracking-tighter mb-2">2.5x</div>
+            <div className="text-sm font-bold text-zinc-400 uppercase tracking-wider">Increase in order volume</div>
+          </div>
+          <p className="text-zinc-300 leading-relaxed mb-8 flex-grow">
+            &quot;As an e-commerce brand experiencing hyper-growth, we needed a logistics partner that could scale with us instantly. /AXION&apos;s automated fulfillment seamlessly handled our massive spikes in demand.&quot;
+          </p>
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-zinc-800 overflow-hidden relative">
+              <Image src="https://picsum.photos/seed/person2/100/100" alt="Marcus Chen" fill className="object-cover" referrerPolicy="no-referrer" />
+            </div>
+            <div>
+              <div className="font-bold text-white">Marcus Chen</div>
+              <div className="text-sm text-zinc-400">COO, StyleNova Retail</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Testimonial 3 */}
+        <div className="bg-[#F9F9F9] p-8 rounded-3xl flex flex-col border border-zinc-100">
+          <div className="mb-8">
+            <div className="text-5xl font-black tracking-tighter text-zinc-900 mb-2">$2.4M</div>
+            <div className="text-sm font-bold text-zinc-600 uppercase tracking-wider">Annual cost savings</div>
+          </div>
+          <p className="text-zinc-700 leading-relaxed mb-8 flex-grow">
+            &quot;The data analytics provided by /AXION identified inefficiencies in our last-mile delivery that we hadn&apos;t seen. Their optimization strategies translated directly to our bottom line within the first quarter.&quot;
+          </p>
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-zinc-200 overflow-hidden relative">
+              <Image src="https://picsum.photos/seed/person3/100/100" alt="Elena Rodriguez" fill className="object-cover" referrerPolicy="no-referrer" />
+            </div>
+            <div>
+              <div className="font-bold text-zinc-900">Elena Rodriguez</div>
+              <div className="text-sm text-zinc-500">Director of Operations, MediCorp</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const Footer = () => {
   return (
     <footer className="w-full bg-zinc-900 text-white py-12">
@@ -270,6 +348,7 @@ export default function Page() {
         <Services />
         <Industries />
         <Technology />
+        <Testimonials />
       </main>
       <Footer />
       <QuoteModal />
